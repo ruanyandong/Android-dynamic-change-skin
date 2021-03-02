@@ -1,0 +1,4 @@
+include ':skinplugin'
+include ':ChangeSkin'
+include ':app'
+rootProject.name = "AggressChangeSkin"

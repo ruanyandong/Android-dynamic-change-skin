@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="theme_1" >
+        <item name="main_bg">@color/bg_main_normal</item>
+        <item name="main_textcolor">@color/textcolor_main_normal</item>
+        <item name="main_btn_bg">@color/textcolor_main_dark</item>
+        <item name="main_textAppearance">@style/theme_1_btn</item>
+        <item name="second_bg">@color/bg_second_normal</item>
+        <item name="second_textcolor">@color/textcolor_second_normal</item>
+    </style>
+
+    <style name="theme_2">
+        <item name="main_bg">@color/bg_main_dark</item>
+        <item name="main_textcolor">@color/textcolor_main_dark</item>
+        <item name="main_btn_bg">@color/textcolor_main_normal</item>
+        <item name="main_textAppearance">@style/theme_2_btn</item>
+        <item name="second_bg">@color/bg_second_dark</item>
+        <item name="second_textcolor">@color/textcolor_second_dark</item>
+    </style>
+
+    <style name="theme_1_btn">
+        <item name="android:background">@color/textcolor_main_dark</item>
+    </style>
+    <style name="theme_2_btn">
+        <item name="android:background">@color/textcolor_main_normal</item>
+    </style>
+</resources>

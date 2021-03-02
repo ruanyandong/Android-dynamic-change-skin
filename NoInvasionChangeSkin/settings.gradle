@@ -1,0 +1,4 @@
+include ':skinplugin'
+include ':changskin'
+include ':app'
+rootProject.name = "NoInvasionChangeSkin"
