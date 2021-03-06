@@ -16,7 +16,7 @@
         android:text="换肤"
         android:layout_centerInParent="true"
         android:textColor="?attr/main_textcolor"
-        android:background="?main_bg"
+        android:background="?attr/main_bg"
         android:layout_width="100dip"
         android:layout_height="80dip" />
 
@@ -27,7 +27,7 @@
         android:layout_below="@id/btn"
         android:layout_marginTop="30dip"
         android:textColor="?attr/main_textcolor"
-        android:background="?main_bg"
+        android:background="?attr/main_bg"
         android:layout_width="100dip"
         android:layout_height="80dip" />
 
