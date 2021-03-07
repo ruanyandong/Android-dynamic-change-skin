@@ -77,6 +77,7 @@ public class MainActivity extends BaseActivity {
             }
 //            }
         });
+
         btn_next = (ColorButton) findViewById(R.id.btn_2);
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +85,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
+
     }
 
 }

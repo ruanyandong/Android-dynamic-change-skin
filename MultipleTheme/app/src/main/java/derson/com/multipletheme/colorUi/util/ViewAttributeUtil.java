@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import derson.com.multipletheme.colorUi.ColorUiInterface;
@@ -13,10 +14,17 @@ public class ViewAttributeUtil {
     public static int getAttributeValue(AttributeSet attr, int paramInt) {
         int value = -1;
         int count = attr.getAttributeCount();
+
+        //getAttributeValue: attr.getAttributeCount() 7 paramInt 16842904
+        Log.d("ruanyandong", "getAttributeValue: attr.getAttributeCount() "+attr.getAttributeCount()+" paramInt "+paramInt);
         for(int i = 0; i <count;i++) {
             if(attr.getAttributeNameResource(i) == paramInt) {
                 //str ?2130771968
                 String str = attr.getAttributeValue(i);
+
+                //getAttributeValue: attr.getAttributeName(i) background  attr.getAttributeValue(i) ?2130771968
+                //getAttributeValue: attr.getAttributeName(i) textColor  attr.getAttributeValue(i) ?2130771971
+                Log.d("ruanyandong", "getAttributeValue: attr.getAttributeName(i) "+attr.getAttributeName(i)+" attr.getAttributeValue(i) "+attr.getAttributeValue(i));
                 if(null != str && str.startsWith("?")) {
                     value = Integer.parseInt(str.substring(1));
                     return value;
